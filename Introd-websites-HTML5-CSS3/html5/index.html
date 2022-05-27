@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Meg Flôres</title>
-</head>
-<header>
-    <img src="perfil.png" alt="Foto do Perfil"/>
-    <h1>Meg Flôres</h1>
-</header>
-<body>
+  </head>
+  <header>
+    <img src="perfil.png" alt="Foto do Perfil" class="foto" />
+    <h1 id="title">Meg Flôres</h1>
+  </header>
+  <body>
     <section>
+      <header>
+        <h2 class="subtitle">Posts</h2>
+      </header>
+      <article class="post">
         <header>
-            <h2>Posts</h2>
-            <img src="codehtml.png" alt="Imagem de código no editor">
+          <h3 class="post_title">Post #1</h3>
+          <img
+            src="codehtml.png"
+            alt="Imagem de código no editor"
+            class="post_image"
+          />
         </header>
-        <article>
-            <header>Post #1</header>
-            <p>Lorem ipsum dolor. <a href="http://github.com/kedinha" target="_blank"> Ipsum quod</a>, non excepturi quisquam quibusdam quidem. Optio, alias blanditiis. <br/>Ut dolorem cumque architecto impedit deserunt nesciunt et quis <a href="mailto:user@gmail.com"> Email!</a><br/>
-                Non possimus dolores blanditiis ducimus assumenda. <br/>
-                Corrupti excepturi voluptas vel fugit nulla incidunt ratione nam necessitatibus, voluptate consequatur ab quo voluptatibus iusto qui sit repudiandae consectetur, quae aperiam neque? Ipsum cumque ab quos delectus, nemo ut.</p>
-            </article>
+        <p class="post_content">
+          Lorem ipsum dolor.
+          <a href="http://github.com/kedinha" target="_blank"> Ipsum quod</a>,
+          non excepturi quisquam quibusdam quidem. Optio, alias blanditiis.
+          <br />Ut dolorem cumque architecto impedit deserunt nesciunt et quis
+          <a href="mailto:user@gmail.com"> Email!</a><br />
+          Non possimus dolores blanditiis ducimus assumenda. <br />
+          Corrupti excepturi voluptas vel fugit nulla incidunt ratione nam
+          necessitatibus, voluptate consequatur ab quo voluptatibus iusto qui
+          sit repudiandae consectetur, quae aperiam neque? Ipsum cumque ab quos
+          delectus, nemo ut.
+        </p>
+      </article>
     </section>
     <footer>
-        <ul>
-            <li>
-                <a href="mailto:megflores@gmail.com" target="_blank">Meu Email</a>
-            </li>
-            <li>
-                <a href="http://linkedin.com" target="_blank">Linkedin</a>
-            </li>
-            <li>
-                <a href="http://github.com/kedinha" target="_blank">Github</a>
-            </li>
-        </ul>
+      <ul class="contacts_list">
+        <li>
+          <a href="mailto:megflores@gmail.com" target="_blank">Meu Email</a>
+        </li>
+        <li>
+          <a href="http://linkedin.com" target="_blank">Linkedin</a>
+        </li>
+        <li>
+          <a href="http://github.com/kedinha" target="_blank">Github</a>
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
