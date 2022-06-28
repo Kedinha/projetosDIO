@@ -1,20 +1,20 @@
-import React from 'react'
-// import { StatusBar } from 'expo-status-bar'
+import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
-const App = () => {
+export default function App() {
   return (
     <View style={styles.container}>
       <Text>My First App!</Text>
+      <StatusBar style="auto" />
     </View>
   )
 }
 
-export default App
-
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'pink',
-    alignItems: 'center'
+    flex: 1,
+    backgroundColor: '#000055',
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })
