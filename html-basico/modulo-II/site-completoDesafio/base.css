@@ -27,13 +27,17 @@ h1 {
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: #6ebfd3fa;
     min-height: 150px;
 }
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
+}
+.image1 {
+    display: flex;
+    justify-content: center;
 }
 .table th, td{
     align-items: center;
@@ -44,4 +48,10 @@ h1 {
     min-height: 150px;
     text-align: center;
     padding-top: 20px;
+}
+    .footer img {
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px 12px lightblue;
+
 }
