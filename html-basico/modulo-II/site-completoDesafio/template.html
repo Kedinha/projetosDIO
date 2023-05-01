@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="#template">Página Principal</a></li>
+                <li><a href="/sobre.html">Sobre a clínica</a></li>
+                <li><a href="#horaatend">Horário de Atendimento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+            
+                <!-- Aqui vai o seu header -->
+                <div style="text-align: center;">
+                    <img src="ht-logo-png.png" alt="Logo da clinica dentária">
+                    <h1>Dando vida ao seu sorriso</h1>
+                </div>
+            </div>
+    
+            <div class="content">
+                <!-- Content -->
+                <!-- Aqui vai o seu conteúdo -->
+                <p>Oferecemos serviços abrangentes, desde procedimentos odontológicos básicos até especialidades odontológicas, como tratamentos restauradores e de implantes.</p>
+                <p>Os dentistas altamente qualificados e bem treinados garantirão cuidados dentários delicados e excelentes, dando a você um verdadeiro motivo para sorrir!</p>
+                <div>
+                    <p><img src="image1.webp" alt="Foto de tratamento dentário"></p>
+                </div>
+
+
+                <div class="table">
+                    <table id="horaatend">                        
+                        <tr style="text-align: center;"> 
+                            <th style="border: 2 solid #2a2727 ;">Serviços</th>  <!--Cabeçalhos da tabelha  -->
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                        <tr style="text-align: center; "> <!--linha da tabela-->
+                            <td>Clínica geral</td> <!--tabela de dados-->
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td> - </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td> - </td>
+                        </tr>  
+                    </table>
+                </div>
+                      <!-- Inicio Formulário --> 
+                <div class="form">
+                <h3 id="contato">Contato</h3>
+                <form name="contatoform" method="POST" action="#" target="_blank" autocomplete="on" onsubmit="alert('Formulário enviado com sucesso');">
+                    Nome: <br/>
+                    <input type="text" name="name" /><br /><br/>
+                    E-mail:<br/> <input type="email" name="email" /><br/><br/>
+                    Assunto:<br/> <input type="text" name="assunto" /> <br/><br/>
+                    Mensagem:<br/> <textarea cols="30" rows="5" name="mensagem"> </textarea> <br/><br/>                    
+                    <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+                </form>
+                    
+                </div>
+            </div>
+    
+            <div class="footer">
+               <!-- Aqui vai o seu rodapé -->             
+                <img src="ht-logo-png.png" alt="Logo da clinica dentária"> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
