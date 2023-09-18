@@ -20,4 +20,5 @@ public class Atendente {
   public void pegarPedidoBalcao(){
   System.out.println("Pegando pedido no balcao");
   }
+
 }
