@@ -1,8 +1,14 @@
 package lanchonete;
 
+import lanchonete.area.cliente.Cliente;
+import lanchonete.atendimento.Atendente;
+import lanchonete.atendimento.cozinha.Almoxarife;
+import lanchonete.atendimento.cozinha.Cozinheiro;
+
 public class Estabelecimento {
 	public static void main(String[] args) {
 		Cozinheiro cozinheiro = new Cozinheiro();
+    
 		//ações que não precisam estarem disponíveis para toda a aplicação
 		cozinheiro.lavarIngredientes();
 		cozinheiro.baterVitaminaLiquidificador();
@@ -17,9 +23,11 @@ public class Estabelecimento {
 		cozinheiro.adicionarComboNoBalcao();
 		
 		Almoxarife almoxarife = new Almoxarife();
+    
 		//ações que não precisam estarem disponíveis para toda a aplicação
 		almoxarife.controlarEntrada();
 		almoxarife.controlarSaida();
+
 		//ação que somente o seu pacote cozinha precisa conhecer (default)
 		almoxarife.entregarIngredientes();
 		almoxarife.trocasrGas();
@@ -28,6 +36,7 @@ public class Estabelecimento {
 		atendente.pegarLancheCozinha();
 		atendente.receberPagamento();
 		atendente.servindoMesa();
+
 		//ação que somente o seu pacote cozinha precisa conhecer (default)
 		atendente.trocarGas();
 		
