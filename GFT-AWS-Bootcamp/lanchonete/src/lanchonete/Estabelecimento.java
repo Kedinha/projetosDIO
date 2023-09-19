@@ -2,7 +2,7 @@ package lanchonete;
 
 import lanchonete.area.cliente.Cliente;
 import lanchonete.atendimento.Atendente;
-//import lanchonete.atendimento.cozinha.Almoxarife;
+import lanchonete.atendimento.cozinha.Almoxarife;
 import lanchonete.atendimento.cozinha.Cozinheiro;
 
 public class Estabelecimento {
@@ -22,10 +22,10 @@ public class Estabelecimento {
 		cozinheiro.adicionarComboNoBalcao();
 		
 		//Aqui foi aplicado a visibilidade default
-			//Almoxarife almoxarife = new Almoxarife();
+			Almoxarife almoxarife = new Almoxarife();
     
 		//ações que não precisam estarem disponíveis para toda a aplicação
-			// almoxarife.controlarEntrada();
+			almoxarife.controlarEntrada();
 			// almoxarife.controlarSaida();
 
 		//ação que somente o seu pacote cozinha precisa conhecer (default)
