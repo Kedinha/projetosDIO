@@ -1,18 +1,18 @@
-## Getting Started
+# Visibilidade
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Modificadores
+- palavras reservadas e um conceito default (sem nehuma palavra reservada) para definir os quatro tipo de visibilidade de atributos, métodos e até mesmo classes, no que se refere ao acesso por outras classes. 
+- mais visível - public,
+- ao mais restrito tipo de visibilidade private.
 
-## Folder Structure
+#### Modificador public
+- qualquer outra classe em qualquer outro pacote, poderá visualizar tais recursos
 
-The workspace contains two folders by default, where:
+#### Modificador default
+- está fortemente associado a organização das classes por pacotes, este modificador de acesso, restringe a visibilidade por pacotes.
+- Para definir um método visível a nível de pacote, basta NÃO declarar nenhum modificador.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+#### Modificador private
+- Não podem ser vistas por ninguém, apenas pela própria classe.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+#### Modificador protected
