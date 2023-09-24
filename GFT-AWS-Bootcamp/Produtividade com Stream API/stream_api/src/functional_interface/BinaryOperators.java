@@ -18,6 +18,8 @@ public class BinaryOperators {
 
     // Usar o BinaryOperator para somar todos os números no Stream
     int resultado = numeros.stream()
+
+    //lembrar da variavel temporária de referencia - reduce
         .reduce(0, Integer::sum);
 
     // Imprimir o resultado da soma
