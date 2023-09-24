@@ -10,6 +10,8 @@ public class Suppliers {
 
     Supplier<String> saudacao = () -> "Olá, seja bem-vindo(a)!";
 
+
+    // Lista com 5 saudações com o metodo Supplier
     List<String> listaSaudacoes = Stream.generate(saudacao)
         .limit(5)
         // .collect(Collectors.toList());
