@@ -36,7 +36,20 @@ habilidades: string[];
   cidade: "SP"
 };
 
-//criar type produto loja 
+
+//tipos abrangentes: any, void
+let retorno: void;
+let retornoView: any = false;
+
+//objeto - sem previsibilidade
+let produto:object = {
+  name: "Ked",
+  cidade: "sp",
+  idade: 40,
+};
+
+
+//Objeto tipado com previsibilidade - type produto loja (struct)
 
 type ProdutoLoja = {
   nome: string;
@@ -44,3 +57,18 @@ type ProdutoLoja = {
   descricao: string;
   estoque: number;
 }
+
+let meuProduto: ProdutoLoja = {
+  nome: "tênis",
+  preco: 89.90,
+  descricao: "descrição do produto",
+  estoque:100
+
+}
+
+/**
+ * Arrays
+ * */ 
+
+let dados: string[] = ["Kedma", "Anne", "Carol"] //ou
+let daddos2: Array<string> = ["Kedma", "Anne", "Maria"]
