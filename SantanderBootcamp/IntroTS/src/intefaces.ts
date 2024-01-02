@@ -1,33 +1,33 @@
 /* eslint-disable @typescript-eslint/consistent-type-definitions */
 /**
- * Interfaces 
+ * Interfaces
  * type usa quando eu quero tipar um conjunto ou um objeto
  * interface para trabalhar com classe)
  */
 
 type robot = {
-readonly  id: number | string;
+  readonly id: number | string;
   name: string;
-}
+};
 
 interface robot2 {
-readonly  id: number | string,
-  name: string
-  sayHello(): string;
-
+  readonly id: number | string;
+  name: string;
+  sayHello: () => string;
+  // sayHello(): string;
 }
 
 const bot: robot = {
-  id:1,
-  name: "megaman"
-}
+  id: 1,
+  name: "megaman",
+};
 const bot2: robot2 = {
   id: "1",
   name: "megaman",
   sayHello: function (): string {
     throw new Error("Function not implemented.");
-  }
-}
+  },
+};
 
 console.log(bot);
 console.log(bot2);
@@ -42,10 +42,9 @@ class Pessoa implements robot2 {
   }
 
   sayHello(): string {
-   return `Hello I'm ${this.name}`;
-    
+    return `Hello I'm ${this.name}`;
   }
 }
 
-const p = new Pessoa(1, "gustman")
+const p = new Pessoa(1, "gustman");
 console.log(p.sayHello());
