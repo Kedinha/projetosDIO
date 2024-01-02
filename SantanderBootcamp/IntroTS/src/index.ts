@@ -6,7 +6,7 @@ habilidades: string[];
 
  }
 
- function printaObjetos(pessoa:heroi){
+ function printaObjetos(pessoa: heroi){
    console.log(pessoa.nome)
    console.log(pessoa.habilidades)
  }
@@ -37,11 +37,11 @@ habilidades: string[];
 };
 
 
-//tipos abrangentes: any, void
+// tipos abrangentes: any, void
 let retorno: void;
 let retornoView: any = false;
 
-//objeto - sem previsibilidade
+// objeto - sem previsibilidade
 let produto:object = {
   name: "Ked",
   cidade: "sp",
@@ -49,7 +49,7 @@ let produto:object = {
 };
 
 
-//Objeto tipado com previsibilidade - type produto loja (struct)
+// Objeto tipado com previsibilidade - type produto loja (struct)
 
 type ProdutoLoja = {
   nome: string;
@@ -70,5 +70,62 @@ let meuProduto: ProdutoLoja = {
  * Arrays
  * */ 
 
-let dados: string[] = ["Kedma", "Anne", "Carol"] //ou
-let daddos2: Array<string> = ["Kedma", "Anne", "Maria"]
+let dados: string[] = ["Kedma", "Anne", "Carol"]; // ou
+let daddos2: Array<string> = ["Kedma", "Anne", "Maria"];
+
+
+// array multi types - aceita dois tipos independente da ordem
+
+let infos: (string | number)[] = ["Kedma", 20];
+
+
+/**
+ * Tuplas != "arrays" - aceita tipos diferentes, mas na ordem do tipo inserida
+ */
+
+let boleto: [string, number, number] = ["conta agua", 199.90, 685438];
+
+/**
+ * arrays métodos são os mesmos aos do javascript
+ */
+
+dados.push
+dados.reduce
+dados.pop
+dados.map
+
+/**
+ * Datas - Date
+ */
+
+let aniversario:Date = new Date("2023-12-30 19:00");
+
+console.log(aniversario.toString());
+
+
+/**
+ * Funções
+ */
+
+function addNumber(x:number, y:number): number {
+  return x + y;
+}
+let soma: number = addNumber(4,7);
+
+console.log(soma);
+
+function addToHello(name:string):string {
+  return `Hello ${name}`;
+}
+
+console.log(addToHello("Kedma"));
+
+/**
+ * Multi tipos
+ */
+
+function CallToPhone(phone:number | string): number | string{
+  return phone;  
+}
+
+console.log(CallToPhone("12345" ));
