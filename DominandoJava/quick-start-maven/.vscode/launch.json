@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-App<quick-start-maven>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "ked.digitalinnovation.App",
+      "projectName": "quick-start-maven",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
