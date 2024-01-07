@@ -15,14 +15,12 @@ public class ProcessoSeletivo {
     System.out.println("------ Processo seletivo -------");
     imprimirSelecionados();
     System.out.println("------ Solicitação de cada candidato -------");
-
     selecaoCandidatos();
-
   }
 
   static void imprimirSelecionados() {
     String[] candidatos = { "RAFAELA", "ANTONIO", "FERNANDO", "KEDMA", "ANA" };
-    System.out.println("Imprimentos a lista de candidatos com o índice do candiadto");
+    System.out.println("Imprimindo a lista de candidatos com o índice do candiadto");
 
     for (int i = 0; i < candidatos.length; i++) {
       System.out.println("O candidato de nº " + (i + 1) + " é " + candidatos[i]);
