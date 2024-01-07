@@ -1,6 +1,6 @@
-## Getting Started
+## Accountant Challenge
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to Java world. Here is a guideline to help you write Java code for a counter with two input parameters.
 
 ## Folder Structure
 
