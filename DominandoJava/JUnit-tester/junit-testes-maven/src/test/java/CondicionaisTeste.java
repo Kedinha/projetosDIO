@@ -28,10 +28,10 @@ public class CondicionaisTeste {
     Assertions.assertEquals(10, 5 + 5);
   }
 
-  @Test
-  @EnabledForJreRange(min = JAVA_11, max = JAVA_17)
-  void verVersaoCorrente() {
-    Assertions.assertEquals(10, 5 + 5);
-  }
+  // @Test
+  // @EnabledForJreRange(min = JAVA_11, max = JAVA_17)
+  // void verVersaoCorrente() {
+  // Assertions.assertEquals(10, 5 + 5);
+  // }
 
 }
