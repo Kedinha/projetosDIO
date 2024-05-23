@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import com.ked.Conta;
 
-public class ContaTest {
+public class ContaTestSaldo {
   @Test
   void validaSaldo() {
     Conta conta = new Conta("123456", 100);
