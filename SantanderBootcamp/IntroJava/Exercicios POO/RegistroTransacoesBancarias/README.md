@@ -40,3 +40,20 @@
   O método `getSaldo()` foi criado para retornar o valor do saldo atual da conta.<br/>
   <i>Formatação:</i>
   A formatação da saída foi aprimorada para exibir o saldo com uma casa decimal usando <b>printf()</b> .
+
+### Desafio 4 - Herança Bancária: Entendendo a Herança e Polimorfismo
+
+- #### Herança:
+
+  - A classe ContaPoupanca herda da classe `ContaBancaria`, aproveitando os atributos e métodos da classe pai.
+
+- #### Sobrecarga de Construtores:
+
+  - Um construtor específico para `ContaPoupanca` foi implementado para receber e inicializar todos os atributos da classe.
+
+- #### Polimorfismo:
+
+  - O método `exibirInformacoes()` foi sobrescrito na classe `ContaPoupanca` para exibir as informações específicas da conta poupança, incluindo a taxa de juros.
+
+- #### Formatação de Dados:
+  - A classe `DecimalFormat` foi utilizada para formatar os valores decimais (saldo e taxa de juros) com duas casas decimais.
