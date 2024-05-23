@@ -44,7 +44,7 @@ public class AssertionsTest {
     Pessoa pessoa = null;
     Assertions.assertNull(pessoa);
 
-    pessoa = new Pessoa("Zoe", LocalDate.now());
+    pessoa = new Pessoa("Zoe", null, LocalDate.now());
 
     Assertions.assertNotNull(pessoa);
 

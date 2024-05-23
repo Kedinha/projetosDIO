@@ -9,13 +9,13 @@ public class PessoaTest {
 
   @Test
   void validarCalculoDeIdade() {
-    Pessoa pessoa = new Pessoa("Ana", LocalDate.of(2020, 1, 1));
+    Pessoa pessoa = new Pessoa("Ana", null, LocalDate.of(2020, 1, 1));
     Assertions.assertEquals(4, pessoa.getIdade());
   }
 
   @Test
   void deveCalcularIdadeCorretamente() {
-    Pessoa kedma = new Pessoa("Kédma", LocalDate.of(1976, 12, 21));
+    Pessoa kedma = new Pessoa("Kédma", null, LocalDate.of(1976, 12, 21));
     Assertions.assertEquals(47, kedma.getIdade());
 
   }
@@ -23,11 +23,11 @@ public class PessoaTest {
   @Test // --> Anotação é primordial para testar
   void deveRetornarSeMaiorIdade() {
     // --> criação do cenário
-    Pessoa kedma = new Pessoa("Kedinha", LocalDate.of(2000, 1, 1));
+    Pessoa kedma = new Pessoa("Kedinha", null, LocalDate.of(2000, 1, 1));
     // --> Executa a validação do teste
     Assertions.assertTrue(kedma.eMaiorIdade());
 
-    Pessoa levi = new Pessoa("Levi", LocalDate.of(2020, 1, 1));
+    Pessoa levi = new Pessoa("Levi", null, LocalDate.of(2020, 1, 1));
     Assertions.assertFalse(levi.eMaiorIdade());
   }
 }
