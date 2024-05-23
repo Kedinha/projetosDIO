@@ -23,12 +23,12 @@ public class ConsultarDadosPessoaTest {
 
   @BeforeEach // antes de cada teste da classe
   void insereDadosParaTeste() {
-    BancoDeDados.insereDados(new Pessoa("Levi", null, LocalDate.of(2000, 12, 21)));
+    BancoDeDados.insereDados(new Pessoa("Levi", "123", LocalDate.of(2000, 12, 21)));
   }
 
   @AfterEach
   void removeDadosTeste() {
-    BancoDeDados.removeDados(new Pessoa("Levi", null, LocalDate.of(2000, 12, 21)));
+    BancoDeDados.removeDados(new Pessoa("Levi", "456", LocalDate.of(2000, 12, 21)));
   }
 
   @Test

@@ -5,7 +5,6 @@
 # Compiled class file
 **/*.class
 *.class
-
 # Log file
 *.log
 
@@ -29,7 +28,7 @@ hs_err_pid*
 replay_pid*
 
 ### Maven ###
-target/
+/target
 target/classes/
 target/test-classes/
 pom.xml.tag
