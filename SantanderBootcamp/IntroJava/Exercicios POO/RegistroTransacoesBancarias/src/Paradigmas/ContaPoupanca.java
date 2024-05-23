@@ -13,6 +13,7 @@ class ContaPoupanca extends ContaBancaria {
   public void exibirInformacoes() {
     super.exibirInformacoes(); // Chama o método da classe base
     DecimalFormat decimalFormat = new DecimalFormat("#.0");
-    System.out.println("Taxa de Juros: " + decimalFormat.format(taxaJuros) + "%");
+    System.out.println("Taxa de juros: " + decimalFormat.format(taxaJuros) + "%");
+
   }
 }
