@@ -3,6 +3,7 @@
 
 ### Java ###
 # Compiled class file
+**/*.class
 *.class
 
 # Log file
@@ -29,6 +30,8 @@ replay_pid*
 
 ### Maven ###
 target/
+target/classes/
+target/test-classes/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -48,4 +51,5 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-# End of https://www.toptal.com/developers/gitignore/api/java,maven
+# End of gitignore/api/java,maven,class
+
