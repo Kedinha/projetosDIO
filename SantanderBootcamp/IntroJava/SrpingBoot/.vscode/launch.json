@@ -1,0 +1,21 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "PrimeirosPassosApplication",
+			"request": "launch",
+			"mainClass": "firstStep.springboot.PrimeirosPassosApplication",
+			"projectName": "primeiros-passos"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-PrimeirosPassosApplication<primeiros-passos>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "java.springboot.PrimeirosPassosApplication",
+			"projectName": "primeiros-passos",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		}
+	]
+}
