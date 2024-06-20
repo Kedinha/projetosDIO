@@ -14,7 +14,8 @@ public class SpringPrimeirosPassosApplication {
         SpringApplication.run(SpringPrimeirosPassosApplication.class, args);
     }
 
-    @Bean
+    @Bean // quando não tenho acesso ao codigo fonte e Component é quando é uma classe que
+          // tem a finalidade de ser provida pela Injeção de dependencias.
     public CommandLineRunner run(ConversorJson conversor) throws Exception {
         return args -> {
             String json = "{\"cep\":\"01001-000\",\"logradouro\":\"Praça da Sé\",\"localidade\":\"São Paulo\"}";
