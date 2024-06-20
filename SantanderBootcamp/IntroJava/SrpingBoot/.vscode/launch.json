@@ -2,6 +2,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "SpringPrimeirosPassosApplication",
+			"request": "launch",
+			"mainClass": "srpingboot.SpringPrimeirosPassosApplication",
+			"projectName": "spring-ioc-di-beans-autowired"
+		},
+		{
+			"type": "java",
 			"name": "PrimeirosPassosApplication",
 			"request": "launch",
 			"mainClass": "firstStep.springboot.PrimeirosPassosApplication",
