@@ -11,6 +11,10 @@
 	<groupId>firstStep</groupId>
 	<artifactId>primeiros-passos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>spring-scopes-simgleton-prototypes</module>
+	</modules>
 	<name>primeiros-passos</name>
 	<description>Projeto Spring Boot primeiros passos</description>
 	<properties>

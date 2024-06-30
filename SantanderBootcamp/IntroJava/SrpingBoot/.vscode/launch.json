@@ -4,6 +4,12 @@
 			"type": "java",
 			"name": "SpringPrimeirosPassosApplication",
 			"request": "launch",
+			"mainClass": "firstStep.SpringPrimeirosPassosApplication"
+		},
+		{
+			"type": "java",
+			"name": "SpringPrimeirosPassosApplication",
+			"request": "launch",
 			"mainClass": "srpingboot.SpringPrimeirosPassosApplication",
 			"projectName": "spring-ioc-di-beans-autowired"
 		},
