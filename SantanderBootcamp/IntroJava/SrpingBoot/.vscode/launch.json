@@ -2,6 +2,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Main",
+			"request": "launch",
+			"mainClass": "com.springboot.Main",
+			"projectName": "firststep"
+		},
+		{
+			"type": "java",
 			"name": "SpringPrimeirosPassosApplication",
 			"request": "launch",
 			"mainClass": "firstStep.SpringPrimeirosPassosApplication"
